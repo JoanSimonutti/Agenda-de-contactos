@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/home.css";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="nav d-flex justify-content-end gap-2">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<button className="btn btn-primary">Home</button>
 			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
+			<Link to="/nuevo">
+				<button className="btn btn-primary">Add New Contact</button>
+			</Link>
 		</nav>
 	);
 };
