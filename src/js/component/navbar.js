@@ -4,13 +4,18 @@ import "../../styles/home.css";
 
 export const Navbar = () => {
 	return (
-		<nav className="nav d-flex justify-content-end gap-2">
-			<Link to="/">
-				<button className="btn btn-primary">Home</button>
-			</Link>
-			<Link to="/nuevo">
-				<button className="btn btn-primary">Add New Contact</button>
-			</Link>
+		<nav className="nav d-flex justify-content-between">
+			<div className="d-flex justify-content-start gap-2">
+				<h1>AGENDA DE CONTACTOS</h1>
+			</div>
+			<div className="d-flex justify-content-end gap-2">
+				<Link to="/">
+					<button className="btn btn-primary">Home</button>
+				</Link>
+				<Link to="/nuevo">
+					<button className="btn btn-primary">Add New Contact</button>
+				</Link>
+			</div>
 		</nav>
 	);
 };
