@@ -1,15 +1,19 @@
 body {
-  background-color: rgb(200, 238, 225);
-  
+  background-color: #4c4c5a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  min-height: 100vh;
+  /*padding: 2rem;*/
 }
 
 /* Footer */
 .footer {
-  background: #cccaca;
-  color: black;
+  background: #2a2a3b;
+  color: white;
+  font-weight: bold;
   padding: 1em 0;
   text-align: center;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -20,13 +24,49 @@ p {
 
 /* Navbar */
 .nav {
-  background: #cccaca;
-  color: black;
+  width: 100%;
+  background: #2a2a3b;
+  color: white;
   padding: 2rem 1rem;
 }
 
-.enlacefooter {
-  text-decoration: none;
+  .enlacefooter {
+    color: gold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .enlacefooter:hover {
+    color: #fde047; /* Amarillo más claro (yellow-300) */
+    text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
+  }
+  
+
+/* Card */
+.contact-card {
+  background-color: #2a2a3b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.contact-card p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #cfcfcf;
 }
 
 /* Contacts Card */
@@ -34,4 +74,172 @@ p {
   width: 45rem;
 
  
+}
+
+/* Formulario */
+.contact-form {
+  background-color: #2a2a3b;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form .input1 {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.contact-form .input1::placeholder {
+  color: #aaa;
+}
+
+.btn-custom {
+  background-color: #4e4eff;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(78, 78, 255, 0.5);
+  transition: 
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-custom:hover {
+  background-color: #3c3cff;
+  box-shadow: 0 0 10px rgba(78, 78, 255, 0.6),
+              0 0 20px rgba(78, 78, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-custom:active {
+  transform: scale(0.97);
+}
+
+.btn-custom-danger {
+  background-color: #ff4e4e;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(255, 78, 78, 0.5);
+  transition: 
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-custom-danger:hover {
+  background-color: #e93c3c;
+  box-shadow: 0 0 10px rgba(255, 78, 78, 0.6),
+              0 0 20px rgba(255, 78, 78, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-custom-danger:active {
+  transform: scale(0.97);
+}
+
+.btn-custom-warning {
+  background-color: #ffc107;
+  color: #1e1e2f;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(255, 193, 7, 0.5);
+  transition: 
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-custom-warning:hover {
+  background-color: #e0a800;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.6),
+              0 0 20px rgba(255, 193, 7, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-custom-warning:active {
+  transform: scale(0.97);
+}
+
+
+
+.btn-outline {
+  background-color: transparent;
+  color: #4e4eff;
+  border: 2px solid #4e4eff;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #4e4eff;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(78, 78, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-outline:active {
+  transform: scale(0.97);
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #ff4e4e;
+  border: 2px solid #ff4e4e;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff4e4e;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 78, 78, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-outline-danger:active {
+  transform: scale(0.97);
 }

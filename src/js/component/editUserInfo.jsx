@@ -42,20 +42,20 @@ export const EditUserInfo = props => {
    
        return (
    
-        <form className="card form-control p-3" onSubmit={handleSubmit} >
+        <form className="card form-control p-3 contact-form" onSubmit={handleSubmit} >
         <div>
             <p>NAME:</p>
-            <input type="text" className="form-control" value={formData.name} onChange={handleChange} name="name" required />
+            <input type="text" className="form-control input1" value={formData.name} onChange={handleChange} name="name" required />
             <p>PHONE NUMBER:</p>
-            <input type="text" className="form-control" value={formData.phone} onChange={handleChange} name="phone" required />
+            <input type="text" className="form-control input1" value={formData.phone} onChange={handleChange} name="phone" required />
             <p>EMAIL:</p>
-            <input type="text" className="form-control" value={formData.email} onChange={handleChange} name="email" required />
+            <input type="text" className="form-control input1" value={formData.email} onChange={handleChange} name="email" required />
             <p>ADDRESS:</p>
-            <input type="text" className="form-control" value={formData.address} onChange={handleChange} name="address" required />
+            <input type="text" className="form-control input1" value={formData.address} onChange={handleChange} name="address" required />
         </div>
-        <div className="d-flex gap-2 mt-2">
-            <input className="btn btn-success" type="submit" value="Accept" />
-            <button className="btn btn-danger" onClick={handleCancel}>
+        <div className="d-flex gap-2 mt-2 align-items-baseline justify-content-end">
+            <input className="btn btn-custom" type="submit" value="Accept" />
+            <button className="btn btn-custom-danger" onClick={handleCancel}>
                 Cancel
             </button>
         </div>

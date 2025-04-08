@@ -9,7 +9,7 @@ export const Edit = () => {
 
         <div className="d-flex flex-column align-items-center mt-3 mb-3 gap-3">
             <h3>
-                EDIT CONTACT
+               <strong>EDIT CONTACT</strong>
             </h3>
             <EditUserInfo />
         </div>

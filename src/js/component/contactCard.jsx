@@ -15,7 +15,7 @@ export const ContactCard = (props) => {
     }
 
     return (
-        <div className="card p-3">
+        <div className="card contact-card p-3">
             <div className="d-flex justify-content-between">
                 <div className="d-flex">
                     <img width={'180px'} src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt={props.name} />
@@ -27,8 +27,8 @@ export const ContactCard = (props) => {
                     </div>
                 </div>
                 <div className="d-flex flex-column justify-content-center gap-2">
-                    <button onClick={handleEdit} className="btn btn-warning">Edit</button>
-                    <button onClick={handleDelete} className="btn btn-danger">Delete</button>
+                    <button onClick={handleEdit} className="btn btn-custom-warning">Edit</button>
+                    <button onClick={handleDelete} className="btn btn-custom-danger">Delete</button>
                 </div>
             </div>
         </div>
