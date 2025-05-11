@@ -39,19 +39,19 @@ export const NewContactForm = () => {
 
         <form className="card form-control p-3 contact-form" onSubmit={handleSubmit} >
             <div>
-                <p>NAME:</p>
+                <p>NOMBRE:</p>
                 <input type="text" className="form-control input1" value={formData.name} onChange={handleChange} name="name" placeholder="Roberto Giordano" required />
-                <p>PHONE NUMBER:</p>
+                <p>TELEFONO:</p>
                 <input type="text" className="form-control input1" value={formData.phone} onChange={handleChange} name="phone" placeholder="0303456" required />
                 <p>EMAIL:</p>
                 <input type="text" className="form-control input1" value={formData.email} onChange={handleChange} name="email" placeholder="nomepeguensoygiordano@hotmail.com.ar" required />
-                <p>ADDRESS:</p>
+                <p>DIRECCION:</p>
                 <input type="text" className="form-control input1" value={formData.address} onChange={handleChange} name="address" placeholder="Calle Falsa 123" required />
             </div>
             <div className="d-flex gap-2 mt-2 align-items-baseline justify-content-end">
-                <input className="btn btn-custom" type="submit" value="Accept" />
+                <input className="btn btn-custom" type="submit" value="ACEPTAR" />
                 <button className="btn btn-custom-danger" onClick={handleCancel}>
-                    Cancel
+                    CANCELAR
                 </button>
             </div>
         </form>

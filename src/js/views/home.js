@@ -8,7 +8,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context)
 
 	return (
-		store.contacts?.length === 0? <h2 className="text-center my-5">NO CONTACTS TO DISPLAY<br /> ADD A NEW CONTACT</h2>:
+		store.contacts?.length === 0? <h2 className="text-center my-5">NO HAY CONTACTOS PARA MOSTRAR<br /> AÑADIR UN NUEVO CONTACTO</h2>:
 		
 		<div className="d-flex flex-column align-items-center mt-3 mb-3 gap-3">
 			{

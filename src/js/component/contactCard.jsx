@@ -20,15 +20,15 @@ export const ContactCard = (props) => {
                 <div className="d-flex">
                     <img width={'180px'} src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt={props.name} />
                     <div className="d-flex flex-column align-items-start ms-3 justify-content-center">
-                        <p>Name: {props.name}</p>
-                        <p>Phone: {props.phone}</p>
-                        <p>Email: {props.email}</p>
-                        <p>Address: {props.address}</p>
+                        <p>NOMBRE: {props.name}</p>
+                        <p>TELEFONO: {props.phone}</p>
+                        <p>EMAIL: {props.email}</p>
+                        <p>DIRECCION: {props.address}</p>
                     </div>
                 </div>
                 <div className="d-flex flex-column justify-content-center gap-2">
-                    <button onClick={handleEdit} className="btn btn-custom-warning">Edit</button>
-                    <button onClick={handleDelete} className="btn btn-custom-danger">Delete</button>
+                    <button onClick={handleEdit} className="btn btn-custom-warning">EDITAR</button>
+                    <button onClick={handleDelete} className="btn btn-custom-danger">BORRAR</button>
                 </div>
             </div>
         </div>

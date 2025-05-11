@@ -6,7 +6,7 @@ export const NewContact = () => {
     return (
         <div className="d-flex flex-column align-items-center mt-3 mb-3 gap-3">
             <h3>
-               <strong>NEW CONTACT</strong>
+               <strong>NUEVO CONTACTO</strong>
             </h3>
             <NewContactForm />
         </div>
