@@ -33,6 +33,7 @@ export const NewContactForm = () => {
         e.preventDefault();
         console.log(formData)
         actions.createContact(formData)
+        navigate('/');
     }
 
     return (
