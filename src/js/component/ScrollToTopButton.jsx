@@ -32,7 +32,7 @@ const ScrollToTopButton = () => {
             onMouseUp={(e) => e.currentTarget.classList.remove("active")}
             onMouseLeave={(e) => e.currentTarget.classList.remove("active")}
         >
-            UP
+            ↑
         </button>
     );
 };

@@ -3,12 +3,13 @@
     bottom: 80px;
     right: 80px;
     background-color: #2ea66d;
-    color: white;
+    color: #000000;
     border: none;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     font-size: 35px;
+    font-weight: bolder;
     cursor: pointer;
     box-shadow: 0 0 12px rgba(46, 166, 109, 0.6);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -19,6 +20,7 @@
 .scroll-to-top-btn:hover {
     background-color: #248a56;
     transform: translateY(-2px);
+    color: #ffffff;
 }
 
 .scroll-to-top-btn.active {
