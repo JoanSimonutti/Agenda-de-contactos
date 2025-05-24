@@ -20,10 +20,10 @@ export const ContactCard = (props) => {
                 <div className="d-flex">
                     <img width={'180px'} src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt={props.name} />
                     <div className="d-flex flex-column align-items-start ms-3 justify-content-center">
-                        <p>NOMBRE: {props.name}</p>
-                        <p>TELEFONO: {props.phone}</p>
-                        <p>EMAIL: {props.email}</p>
-                        <p>DIRECCION: {props.address}</p>
+                        <p><strong>NOMBRE:</strong> {props.name}</p>
+                        <p><strong>TELEFONO:</strong> {props.phone}</p>
+                        <p><strong>EMAIL:</strong> {props.email}</p>
+                        <p><strong>DIRECCION:</strong> {props.address}</p>
                     </div>
                 </div>
                 <div className="d-flex flex-column justify-content-center gap-2">
